@@ -6,4 +6,7 @@ Layout - если layout.tsx находится в папке app это зна�
 
 npx shadcn-ui@latest init - инициализировали проект
 
-npx shadcn-ui@latest add button - импортировали кнопку
+npx shadcn-ui@latest add button - import button
+npx shadcn-ui@latest add dialog checkbox drawer input popover select skeleton slider
+npm install lucide-react - icons
+Создаем папку shared в папке components - общие компоненты которые будут внутри себя использовать ui компоненты
