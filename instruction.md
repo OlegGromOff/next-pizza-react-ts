@@ -9,4 +9,5 @@ npx shadcn-ui@latest init - инициализировали проект
 npx shadcn-ui@latest add button - import button
 npx shadcn-ui@latest add dialog checkbox drawer input popover select skeleton slider
 npm install lucide-react - icons
+В папке components > ui у нас автоматически появятся все компоненты которые мы импортировали из shadcn
 Создаем папку shared в папке components - общие компоненты которые будут внутри себя использовать ui компоненты
