@@ -5,6 +5,7 @@ import {
   SortPopup,
   TopBar,
   Filters,
+  ProductsGroupList,
 } from "@/components/shared";
 import { ProductCard } from "@/components/shared/product-card";
 
@@ -17,7 +18,7 @@ export default function Home() {
 
       <TopBar />
       <Container className="mt-10 pb-14">
-        <div className="flex gap-[60px]">
+        <div className="flex gap-[80px]">
           {/* Filters */}
           <div className="W-[250px">
             <Filters />
@@ -25,14 +26,102 @@ export default function Home() {
           {/* Products */}
           <div className="flex-1">
             <div className="flex flex-col gap-16">
-              {/* <ProductCard
-                id={0}
-                name="Чизбургер-пицца"
-                price={550}
-                imageUrl={
-                  "https://cdn.foodpicasso.com/assets/2023/11/17/ff0525b02d10d5c11292db1b66886179---jpeg_1000x_103c0_convert.jpeg"
-                }
-              /> */}
+              <ProductsGroupList
+                title="Пиццы"
+                categoryId={1}
+                items={[
+                  {
+                    id: 1,
+                    name: "Пепперони",
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:292x292/11EE7D60FDA22358AC33C6A44EB093A2.jpg",
+                    items: [{ price: 10 }],
+                  },
+                  {
+                    id: 2,
+                    name: "Маргарита",
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:292x292/11EE7D61706D472F9A5D71EB94149304.jpg",
+                    items: [{ price: 10 }],
+                  },
+                  {
+                    id: 3,
+                    name: "Гавайская",
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:292x292/11EE7D6175C10773BFE36E56D48DF7E3.jpg",
+                    items: [{ price: 10 }],
+                  },
+                  {
+                    id: 4,
+                    name: "Четыре сыра",
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:292x292/11EEE24316D49CCFA979EBAB4534A60D.jpg",
+                    items: [{ price: 10 }],
+                  },
+                  {
+                    id: 5,
+                    name: "Мясная",
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:292x292/11EE7D6134BC4150BDD8E792D866AB52.jpg",
+                    items: [{ price: 10 }],
+                  },
+                  {
+                    id: 6,
+                    name: "Вегетарианская",
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:292x292/11EE7D6108E3A1C9952CD3A7F39A4D02.jpg",
+                    items: [{ price: 10 }],
+                  },
+                ]}
+              />
+              <ProductsGroupList
+                title="Комбо"
+                categoryId={2}
+                items={[
+                  {
+                    id: 1,
+                    name: "Пепперони",
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:292x292/11EE7D60FDA22358AC33C6A44EB093A2.jpg",
+                    items: [{ price: 10 }],
+                  },
+                  {
+                    id: 2,
+                    name: "Маргарита",
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:292x292/11EE7D61706D472F9A5D71EB94149304.jpg",
+                    items: [{ price: 10 }],
+                  },
+                  {
+                    id: 3,
+                    name: "Гавайская",
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:292x292/11EE7D6175C10773BFE36E56D48DF7E3.jpg",
+                    items: [{ price: 10 }],
+                  },
+                  {
+                    id: 4,
+                    name: "Четыре сыра",
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:292x292/11EEE24316D49CCFA979EBAB4534A60D.jpg",
+                    items: [{ price: 10 }],
+                  },
+                  {
+                    id: 5,
+                    name: "Мясная",
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:292x292/11EE7D6134BC4150BDD8E792D866AB52.jpg",
+                    items: [{ price: 10 }],
+                  },
+                  {
+                    id: 6,
+                    name: "Вегетарианская",
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:292x292/11EE7D6108E3A1C9952CD3A7F39A4D02.jpg",
+                    items: [{ price: 10 }],
+                  },
+                ]}
+              />
             </div>
           </div>
         </div>

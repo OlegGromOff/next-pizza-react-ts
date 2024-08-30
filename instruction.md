@@ -11,3 +11,10 @@ npx shadcn-ui@latest add dialog checkbox drawer input popover select skeleton sl
 npm install lucide-react - icons
 В папке components > ui у нас автоматически появятся все компоненты которые мы импортировали из shadcn
 Создаем папку shared в папке components - общие компоненты которые будут внутри себя использовать ui компоненты
+
+Библиотека react-use содержит кастомные хуки (нам нужен useIntersection чтобы следить какой блок сейчас отображается на экране)
+npm i react-use
+
+npm i zustand
+это библиотека управления состоянием (аналог redux)
+Создам папку store и в ней файл category.ts
